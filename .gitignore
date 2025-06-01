@@ -1,1 +1,26 @@
-/target
+# === Rust build artifacts ===
+**/target/
+**/Cargo.lock        # (optional: only ignore if this is a library workspace)
+
+# === C/C++ compiled files ===
+**/cpp/build/
+**/c/build/
+
+# === Temporary and system files ===
+*.exe
+*.obj
+*.o
+*.log
+*.tmp
+*.swp
+*.swo
+*.bak
+*~
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# === Editor/IDE metadata ===
+.vscode/
+.idea/
+*.code-workspace

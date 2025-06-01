@@ -3,5 +3,5 @@
 version = 4
 
 [[package]]
-name = "p1_queue"
+name = "day00001_char_histogram_ascii"
 version = "0.1.0"

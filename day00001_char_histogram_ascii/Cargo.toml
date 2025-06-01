@@ -1,5 +1,5 @@
 [package]
-name = "p0_stack"
+name = "day00001_char_histogram_ascii"
 version = "0.1.0"
 edition = "2021"
 
