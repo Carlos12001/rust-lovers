@@ -11,7 +11,7 @@ void char_histogram(const char str[], int freq[]) {
     if ('A' <= str[i] && str[i] <= 'Z') {
       index = str[i] - 'A';
       freq[index] += 1;
-    } else if (96 < str[i] && str[i] <= 122) {
+    } else if ('a' <= str[i] && str[i] <= 'z') {
       index = (size_t)str[i] - 'a';
       freq[index] += 1;
     }
