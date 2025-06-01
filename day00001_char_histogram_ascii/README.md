@@ -1,8 +1,8 @@
-## Day 00001 - Char Histogram (ASCII)
+# Day 00001 - Char Histogram (ASCII)
 
 **Folder / Rust package:** `day00001_char_histogram_ascii`
 
-### 🧠 Problem Statement
+## 🧠 Problem Statement
 
 Write a program that reads a single line of text from standard input and counts how many times each letter (A–Z or a–z) appears. The program should treat uppercase and lowercase letters as the same and ignore all non-letter characters.
 
@@ -10,7 +10,7 @@ Only the letters that appear at least once should be printed, and each should be
 
 ---
 
-### ✅ Requirements
+## ✅ Requirements
 
 - Input: a single line of text
 - Case-insensitive (e.g., `A` and `a` are treated the same)
@@ -22,13 +22,13 @@ Only the letters that appear at least once should be printed, and each should be
 
 ---
 
-### 📥 Example Input
+## 📥 Example Input
 
 ```bash
 Hello, World!
 ```
 
-### 📤 Expected Output
+## 📤 Expected Output
 
 ```bash
 d: *
@@ -40,7 +40,7 @@ r: *
 w: *
 ```
 
-### 🌟 Bonus Challenge
+## 🌟 Bonus Challenge
 
 - Sort the output by frequency (descending) instead of alphabetical order.
 - Display total character count and total unique letters used.
