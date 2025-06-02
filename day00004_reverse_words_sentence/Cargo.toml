@@ -1,0 +1,6 @@
+[package]
+name = "day00004_reverse_words_sentence"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
