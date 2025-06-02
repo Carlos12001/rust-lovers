@@ -1,0 +1,6 @@
+[package]
+name = "day00002_unique_paths_grid"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
