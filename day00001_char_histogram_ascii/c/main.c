@@ -52,17 +52,11 @@ int main(const int argc, const char *argv[]) {
   } else if (argc == 2) {
     printf("Analyzing input from command-line argument...\n\n");
 
-    size_t len = strlen(argv[1]);
-
-    // check size string
-    if (len >= MAX_LEN) {
-      fprintf(stderr, "Error: the input value exceeded %d characters\n",
+    const size_t n = snprintf(input, MAX_LEN, "%s", argv[1]);
+    if (n >= MAX_LEN) {
+      fprintf(stderr, "Warning: input truncated to %d characters.\n",
               MAX_LEN - 1);
-      return 1;
     }
-
-    strncpy(input, argv[1], MAX_LEN - 1);
-    input[MAX_LEN - 1] = '\0';  // to be sucure strings end in '\0'
   } else {
     fprintf(stderr, "Error: the program only accepts one optional argument\n");
     return 1;

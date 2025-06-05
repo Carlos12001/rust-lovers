@@ -34,18 +34,11 @@ int main(int argc, char *argv[]) {
       s[n - 1] = '\0';
     }
   } else {
-    printf("Analyzing input from command-line argument...\n\n");
-
-    size_t n = strlen(argv[1]);
-
-    // check size string
+    const size_t n = snprintf(s, MAX_LEN, "%s", argv[1]);
     if (n >= MAX_LEN) {
-      fprintf(stderr, "Error: the input value exceeded %d characters\n",
+      fprintf(stderr, "Warning: input truncated to %d characters.\n",
               MAX_LEN - 1);
-      return 1;
     }
-
-    strncpy(s, argv[1], MAX_LEN - 1);
   }
   int vowel_num = count_vowels(s);
   fprintf(stdout, "The number of vowels is\n%d\n", vowel_num);
